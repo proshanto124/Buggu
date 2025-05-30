@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Buggu 💖</title>
+  <style>
+    body {
+      background-color: #fff0f6;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #ff1493;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+    #response {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #800080;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi Buggu! 💘</h1>
+  <p>Click the button below... if you *dare* 😏</p>
+  <button onclick="handleClick()">Click Me!</button>
+  <div id="response"></div>
+
+  <script>
+    const responses = [
+      "You clicked? Matlab tum mujhse pyaar karti ho 😍",
+      "Areeeee... tum toh naughty nikli 😜",
+      "Oops! Wrong button! Now you owe me a kiss 😘",
+      "Wait... did you just fall for me again? 😌",
+      "Haha! Tum pehle hi meri jaan ho 💕"
+    ];
+
+    function handleClick() {
+      const random = Math.floor(Math.random() * responses.length);
+      document.getElementById("response").innerText = responses[random];
+    }
+  </script>
+</body>
+</html>
